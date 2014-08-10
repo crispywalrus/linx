@@ -1,4 +1,3 @@
-import com.typesafe.sbt.pgp.PgpKeys
 
 name := "linx"
 
@@ -17,6 +16,8 @@ licenses := Seq("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0"
 homepage := Some(url("http://github.com/crispywalrus/linx"))
 
 seq(bintraySettings:_*)
+
+publishMavenStyle := true
 
 pomExtra := (
   <scm>
